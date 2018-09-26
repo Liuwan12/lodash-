@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     this._chunk([2,3,4,5],2);
+    //     function _chunk(array, index) {
+    //         if(index<=0){
+    //             return;
+    //         }else{
+    //             var ls = 0;
+    //             const length = array.length;
+    //             var arr = new Array(Math.ceil(array/index));
+    //             for(var i =0;i<length;i+=1){
+    //                 arr = array.slice(index,array/index);
+    //             }
+    //             console.log(arr);
+    //         }
+    //    }
+    function _chunk(array, index) {
+        var result = [];
+        for (var i = 0, len = array.length; i < len; i += index) {
+        result.push(array.slice(i, i + index));
+        }
+
+        console.log(result)
+
+    }
+        _chunk([1, 2, 3, 4], 3)
+    </script>
+</body>
+</html>
