@@ -1,0 +1,14 @@
+<script>
+    function _drop(array,n){
+        if(n==0){
+            return array;
+        }else if(n==undefined){
+            array.splice(0,1);
+            return array;
+        }else{
+            array.splice(0,n);
+            return array;
+        }
+    }
+    console.log(_drop([2,3,4],5));
+</script>
